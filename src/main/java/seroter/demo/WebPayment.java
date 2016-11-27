@@ -6,8 +6,6 @@ public class WebPayment {
 	private String toAccount;
 	private long transferAmount;
 	
-	private String submitDate;
-	
 	public String getFromAccount() {
 		return fromAccount;
 	}
@@ -30,14 +28,6 @@ public class WebPayment {
 	
 	public void setTransferAmount(long transferAmount) {
 		this.transferAmount = transferAmount;
-	}
-	
-	public String getSubmitDate() {
-		return submitDate;
-	}
-	
-	public void setSubmitDate(String submitDate){
-		this.submitDate = submitDate;
 	}
 
 }
