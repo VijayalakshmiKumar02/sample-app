@@ -16,7 +16,7 @@ resources:
     access_key_id: {{s3-key-id}}
     secret_access_key: {{s3-access-key}}
 # resource for my Cloud Foundry target
-- name: resource-pws
+- name: resource-azure
   type: cf
   source:
     api: {{cf-api}}
@@ -43,7 +43,7 @@ jobs:
       trigger: true
       passed: [build-binary]
     - get: resource-seroter-repo
-    - put: resource-pws
+    - put: resource-azure
       params:
         manifest: resource-seroter-repo/manifest-ci.yml
        

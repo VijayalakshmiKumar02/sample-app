@@ -77,9 +77,7 @@ public class SbConfig {
 			
 		} catch (ServiceException findException) {
 			System.out.println("Error: " + findException.getMessage());
-		}
-		
+		}	
 		return svc;
 	}
-
 }

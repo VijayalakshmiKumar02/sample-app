@@ -59,7 +59,6 @@ public class SpringbootAzureConcourseApplication {
 			System.out.println("error converting payload - " + e.getMessage());
 		}
 		
-		return "paymentconfirm";
-		
+		return "paymentconfirm";		
 	}
 }
