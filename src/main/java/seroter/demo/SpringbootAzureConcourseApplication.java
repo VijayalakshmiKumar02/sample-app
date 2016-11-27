@@ -1,5 +1,7 @@
 package seroter.demo;
 
+import java.time.LocalDateTime;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -39,6 +41,9 @@ public class SpringbootAzureConcourseApplication {
 	
 	@PostMapping("/")
 	public String paymentSubmit(@ModelAttribute WebPayment webpayment) {
+		
+		//add submit date
+		webpayment.setSubmitDate(LocalDateTime.now().toString());
 		
 		try {
 			//convert webpayment object to JSON to send to queue
