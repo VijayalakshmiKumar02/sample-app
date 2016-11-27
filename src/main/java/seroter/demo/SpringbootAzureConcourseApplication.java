@@ -41,7 +41,6 @@ public class SpringbootAzureConcourseApplication {
 	public String paymentSubmit(@ModelAttribute WebPayment webpayment) {
 		
 		try {
-			
 			//convert webpayment object to JSON to send to queue
 			ObjectMapper om = new ObjectMapper();
 			String jsonPayload = om.writeValueAsString(webpayment);
