@@ -1,0 +1,7 @@
+{
+  "resource_group_name": "pivotaldemorg",
+  "namespace_name": "seroter-boot",
+  "location": "westus",
+  "type": "Messaging",
+  "messaging_tier": "Standard"
+}

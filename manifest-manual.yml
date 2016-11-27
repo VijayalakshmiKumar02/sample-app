@@ -1,0 +1,9 @@
+---
+applications:
+- name: seroter-boot-azure
+  memory: 256M
+  instances: 2
+  path: target/springboot-azure-concourse-0.0.1-SNAPSHOT.jar
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+  services:
+    - seroterservicebus
