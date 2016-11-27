@@ -6,4 +6,6 @@ git clone resource-seroter-repo resource-app
 
 cd resource-app
 
-mvn clean install
+mvn clean
+
+mvn install
