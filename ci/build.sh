@@ -10,5 +10,5 @@ mvn clean compile
 echo " done compiling"
 mvn install
 echo "done installing"
-mvn test
-echo "done testing"
+java ConcourseJavaMavenTestPrjApplication
+echo "done running"
