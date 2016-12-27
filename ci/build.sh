@@ -10,5 +10,5 @@ mvn clean compile
 echo " done compiling"
 mvn install
 echo "done installing"
-java ConcourseJavaMavenTestPrjApplication
+java de.bitkings.nitram509.ConcourseJavaMavenTestPrjApplication
 echo "done running"
