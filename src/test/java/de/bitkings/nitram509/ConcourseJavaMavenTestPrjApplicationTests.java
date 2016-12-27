@@ -11,6 +11,7 @@ public class ConcourseJavaMavenTestPrjApplicationTests {
 
 	@Test
 	public void contextLoads() {
+		System.out.println("test file");
 	}
 
 }
