@@ -7,6 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ConcourseJavaMavenTestPrjApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ConcourseJavaMavenTestPrjApplication.class, args);
+        SpringApplication.run(ConcourseJavaMavenTestPrjApplication.class, args)
     }
 }
