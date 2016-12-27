@@ -8,10 +8,10 @@ image_resource:
     tag: latest
     
 inputs:
-  - name: resource-seroter-repo
+  - name: sample-app
   
 outputs:
   - name: resource-app
   
 run:
-  path: resource-seroter-repo/ci/build.sh
+  path: sample-app/ci/build.sh
