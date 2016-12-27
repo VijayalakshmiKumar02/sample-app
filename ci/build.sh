@@ -2,7 +2,7 @@
 
 set -e -x
 
-git clone resource-seroter-repo resource-app
+git clone sample-app resource-app
 
 cd resource-app
 
