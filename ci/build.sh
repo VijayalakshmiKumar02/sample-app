@@ -6,6 +6,7 @@ git clone sample-app resource-app
 
 cd resource-app
 
-mvn clean
+mvn clean compile
 
 mvn install
+mvn test
