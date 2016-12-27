@@ -11,5 +11,5 @@ echo " done compiling"
 mvn install
 echo "done installing"
 #java de/bitkings/nitram509/ConcourseJavaMavenTestPrjApplication
-mvn package exec:java de/bitkings/nitram509/ConcourseJavaMavenTestPrjApplication
+mvn package 
 echo "done running"
