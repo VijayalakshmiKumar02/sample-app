@@ -8,7 +8,7 @@ cd resource-app
 echo "created the file"
 #mvn clean compile
 #echo " done compiling"
-mvn install
+#mvn install
 echo "done installing"
 #java de/bitkings/nitram509/ConcourseJavaMavenTestPrjApplication
 mvn test
