@@ -1,13 +1,8 @@
 ---
 resources:
- - name: sample-app
-    type: git
-    source:
-      uri: https://github.com/VijayalakshmiKumar02/sample-app.git
-      branch: master
  - name: deploy_app
-  type: cf
-  source:
+   type: cf
+   source:
     api: {{cf-api}}
     username: {{cf-username}}
     password: {{cf-password}}
