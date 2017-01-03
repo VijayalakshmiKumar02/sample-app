@@ -12,6 +12,6 @@ inputs:
 outputs:
   - name: cfpush
   
-run:
-  path: sample-app/ci/cfpush1.yml
-
+run: 
+  path: yml
+  args: [sample-app/ci/cfpush1.yml]
