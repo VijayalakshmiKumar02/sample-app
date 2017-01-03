@@ -12,4 +12,4 @@ outputs:
   - name: resource-app
   
 run:
-  path: sample-app/ci/build.sh
+  path: sample-app/ci/build1.sh
