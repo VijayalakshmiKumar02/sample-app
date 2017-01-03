@@ -13,5 +13,5 @@ outputs:
   - name: cfpush
   
 run:
-  path: sample-app/ci/build.sh
+  path: sample-app/ci/build1.sh
 
