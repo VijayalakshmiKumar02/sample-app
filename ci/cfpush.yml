@@ -15,7 +15,7 @@ jobs:
   plan:
   - get: sample-app
     trigger: true
-  - put: sample-app
+  - put: deploy_app
     params:
       manifest: sample-app/manifest.yml
       path: sample-app
