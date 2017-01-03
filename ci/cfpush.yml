@@ -1,5 +1,10 @@
 ---
 resources:
+ - name: sample-app
+    type: git
+    source:
+      uri: https://github.com/VijayalakshmiKumar02/sample-app.git
+      branch: master
 - name: deploy_app
   type: cf
   source:
@@ -10,11 +15,11 @@ resources:
     space: {{cf-space}}
     skip_cert_check: true
 jobs:
-- name: depoy_app
+- name: sample-app
   serial: true
   plan:
   - {get:sample-app, trigger: true}
-  - put: node-helloworld 
+  - put: sample-app
     params:
-      manifest: node-helloworld/manifest.yml
-      path: node-helloworld
+      manifest: sample-app/manifest.yml
+      path: sample-app
