@@ -1,5 +1,5 @@
 ---
 applications:
-- name: sample-app
+- name: sample-app12
   disk: 256M
   memory: 128M
