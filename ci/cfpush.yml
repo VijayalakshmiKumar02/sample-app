@@ -13,7 +13,8 @@ jobs:
 - name: sample-app
   serial: true
   plan:
-  - {get:sample-app, trigger: true}
+  - get: sample-app
+    trigger: true
   - put: sample-app
     params:
       manifest: sample-app/manifest.yml
