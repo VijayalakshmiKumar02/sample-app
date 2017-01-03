@@ -1,0 +1,20 @@
+---
+resources:
+- name: deploy_app
+  type: cf
+  source:
+    api: {{cf-api}}
+    username: {{cf-username}}
+    password: {{cf-password}}
+    organization: {{cf-organization}}
+    space: {{cf-space}}
+    skip_cert_check: true
+jobs:
+- name: depoy_app
+  serial: true
+  plan:
+  - {get:sample-app, trigger: true}
+  - put: node-helloworld 
+    params:
+      manifest: node-helloworld/manifest.yml
+      path: node-helloworld
