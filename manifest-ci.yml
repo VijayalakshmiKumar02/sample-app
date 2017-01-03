@@ -4,5 +4,5 @@ applications:
   memory: 128M
   instances: 2
   #path: ../resource-s3/springboot-azure-concourse-0.0.1-SNAPSHOT.jar
-  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+  #buildpack: https://github.com/cloudfoundry/java-buildpack.git
   
