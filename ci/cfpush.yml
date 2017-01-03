@@ -13,5 +13,5 @@ outputs:
   - name: cfpush
   
 run: 
-  path: yml
+  path: sample-app
   args: [sample-app/ci/cfpush1.yml]
