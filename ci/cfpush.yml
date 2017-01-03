@@ -5,7 +5,7 @@ resources:
     source:
       uri: https://github.com/VijayalakshmiKumar02/sample-app.git
       branch: master
-- name: deploy_app
+ - name: deploy_app
   type: cf
   source:
     api: {{cf-api}}
