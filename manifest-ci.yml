@@ -1,6 +1,6 @@
 ---
 applications:
-- name: sample-app
+- name: sample-app123
   memory: 256M
   instances: 2
   #path: ../resource-s3/springboot-azure-concourse-0.0.1-SNAPSHOT.jar
