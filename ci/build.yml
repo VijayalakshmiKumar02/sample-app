@@ -1,10 +1,5 @@
 ---
-platform: linux
-image_resource: 
-  type: docker-image
-  source:
-    repository: maven
-    tag: latest   
+platform: linux 
 inputs:
   - name: sample-app
   
