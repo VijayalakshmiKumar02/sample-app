@@ -2,9 +2,9 @@
 platform: linux 
 image_resource:
   type: docker-image
-  source:
-    repository: maven
-    tag: latest
+   source:
+    repository: pivotalservices/docker-concourse-cf-tools
+    tag: "latest"
 
 inputs:
   - name: sample-app
@@ -13,5 +13,5 @@ outputs:
   - name: cfpush
   
 run:
-  path: sample-app/ci/build1.sh
+  path: sample-app/ci/cfpush1.yml
 
