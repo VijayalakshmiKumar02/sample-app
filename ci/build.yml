@@ -13,4 +13,4 @@ outputs:
   
 run:
   path: sh
-  args: [sample-app/ci/build1.sh]
+  args: [sample-app/ci/build.sh]
