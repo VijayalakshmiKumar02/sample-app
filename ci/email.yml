@@ -8,7 +8,8 @@ inputs:
   - name: sample-app
 
 run:
-  path: sample-app/ci/email.sh
+  path: sh
+  args: [sample-app/ci/email.sh]
 outputs:
   - name: email-out
 params:
