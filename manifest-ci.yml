@@ -7,3 +7,4 @@ applications:
   
   #path: ../resource-app/target/sample-app-0.0.1-SNAPSHOT.jar
 buildpack: https://github.com/cloudfoundry/java-buildpack.git
+##
