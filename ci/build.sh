@@ -9,8 +9,8 @@ echo "created the file"
 #mvn clean compile
 #mvn package
 #echo " done compiling"
-mvn install
-echo "done installing"
+#mvn install
+#echo "done installing"
 #java de/bitkings/nitram509/ConcourseJavaMavenTestPrjApplication
 #mvn test
-echo "done testing"
+echo "done"
