@@ -1,0 +1,16 @@
+---
+platform: linux 
+image_resource:
+  type: docker-image
+  source:
+    repository: maven
+    tag: latest
+inputs:
+  - name: sample-app
+  
+outputs:
+  - name: resource-app
+  
+run:
+  path: sh
+  args: [sample-app/ci/coverage.sh]
