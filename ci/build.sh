@@ -6,6 +6,8 @@ git clone sample-app resource-app
 echo "creating file"
 cd resource-app
 mvn clean package
+echo "$(<target/coverage-reports/jacoco-unit.exec)"
+
 #echo "created the file"
 #mvn clean compile
 #mvn package
