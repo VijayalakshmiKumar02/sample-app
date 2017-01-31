@@ -12,5 +12,5 @@ outputs:
   - name: resource-app
   
 run:
-  path: sh
-  args: [sample-app/ci/coverage.sh]
+   path: "sample-app/mvnw"
+   args: ["-f", "sample-app/pom.xml", "sonar:sonar", "-Dsonar.host.url=http://{{DOCKER_IP}}:9000"]
