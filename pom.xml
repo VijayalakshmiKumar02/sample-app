@@ -40,28 +40,39 @@
       <scope>test</scope>
     </dependency>
      
-     <dependency>
-          <groupId>org.sonarsource.java</groupId>
-          <artifactId>sonar-jacoco-listeners</artifactId>
-          <version>3.8</version>
-          <scope>test</scope>
-        </dependency>
+    
   </dependencies>
 
   <build>
     <plugins>
       <plugin>
         <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-maven-plugin</artifactId>
-        <configuration>
-              <properties>
-                <property>
-                  <name>listener</name>
-                  <value>org.sonar.java.jacoco.JUnitListener</value>
-                </property>
-              </properties>
-            </configuration>
+        <artifactId>spring-boot-maven-plugin</artifactId> 
       </plugin>
+     <plugin>
+  <groupId>org.jacoco</groupId>
+  <artifactId>jacoco-maven-plugin</artifactId>
+  <version>0.5.5.201112152213</version>
+  <configuration>
+   <destFile>${basedir}/target/coverage-reports/jacoco-unit.exec</destFile>
+   <dataFile>${basedir}/target/coverage-reports/jacoco-unit.exec</dataFile>
+  </configuration>
+  <executions>
+   <execution>
+    <id>jacoco-initialize</id>
+    <goals>
+     <goal>prepare-agent</goal>
+    </goals>
+   </execution>
+   <execution>
+    <id>jacoco-site</id>
+    <phase>package</phase>
+    <goals>
+     <goal>report</goal>
+    </goals>
+   </execution>
+  </executions>
+ </plugin>        
     </plugins>
            
   </build>
