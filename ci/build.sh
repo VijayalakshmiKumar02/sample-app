@@ -5,8 +5,8 @@ set -e -x
 git clone sample-app resource-app
 echo "creating file"
 cd resource-app
-mvn clean package
-echo "$(<target/coverage-reports/jacoco-unit.exec)"
+#mvn clean package
+#echo "$(<target/coverage-reports/jacoco-unit.exec)"
 
 #echo "created the file"
 #mvn clean compile
@@ -19,4 +19,9 @@ echo "$(<target/coverage-reports/jacoco-unit.exec)"
 #mvn sonar:sonar
 #java de/bitkings/nitram509/ConcourseJavaMavenTestPrjApplication
 #mvn test
+mvn clean compile
+mvn cobertura:cobertura -Dcobertura.report.format=xml
+
+
+mvn sonar:sonar
 echo "done"
