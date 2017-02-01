@@ -6,7 +6,7 @@ git clone sample-app resource-app
 echo "creating file"
 cd resource-app
 #mvn clean package
-#echo "$(<target/coverage-reports/jacoco-unit.exec)"
+
 
 #echo "created the file"
 #mvn clean compile
@@ -22,6 +22,6 @@ cd resource-app
 mvn clean compile
 mvn cobertura:cobertura -Dcobertura.report.format=xml
 
-
+echo "$(<resource-app/target/surefire-reports)"
 mvn sonar:sonar
 echo "done"
