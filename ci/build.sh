@@ -19,9 +19,9 @@ cd resource-app
 #mvn sonar:sonar
 #java de/bitkings/nitram509/ConcourseJavaMavenTestPrjApplication
 #mvn test
-mvn clean compile
-mvn cobertura:cobertura -Dcobertura.report.format=xml
+#mvn clean compile
+#mvn cobertura:cobertura -Dcobertura.report.format=xml
 
-echo "$(<resource-app/target/surefire-reports)"
-mvn sonar:sonar
+#echo "$(<resource-app/target/surefire-reports)"
+#mvn sonar:sonar
 echo "done"
