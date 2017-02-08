@@ -5,6 +5,7 @@ set -e -x
 git clone sample-app resource-app
 echo "creating file"
 cd resource-app
+#cd
 #mvn clean package
 
 
