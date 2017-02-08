@@ -20,4 +20,4 @@ jobs:
      - put: deploy_app
        params:
         manifest: sample-app/manifest-ci.yml
-        path: sample-app
+        path: sample-ap
