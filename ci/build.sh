@@ -5,6 +5,9 @@ set -e -x
 git clone sample-app resource-app
 echo "creating file"
 cd resource-app
+mvn sonar:sonar \
+    -Dsonar.host.url=https://sonarqube.com \
+    -Dsonar.login=3f448d410b4f84583ae793c965e5ee8d00602528
 #
 #cd
 #mvn clean package
